@@ -1,0 +1,20 @@
+.borrar
+{
+    position: relative;
+    width:20px;
+    height: 20px;
+	background-image:  url("imagenes/eraseIcon.jpg");
+	background-size: 20px 20px;
+	background-position: 0px 0px;
+	background-repeat: no-repeat;
+}
+.editar
+{
+    position: relative;
+    width:20px;
+    height: 20px;
+	background-image:  url("imagenes/editIcon.jpg");
+	background-size: 20px 20px;
+	background-position: 0px 0px;
+	background-repeat: no-repeat;
+}

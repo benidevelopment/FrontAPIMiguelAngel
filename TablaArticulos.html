@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Articulos Pason</title>
+<meta charset="UTF-8"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css">
+<link rel="stylesheet" type="text/css" href="tablaInventario.css">
+<script src="js/mioTabla.js"></script>
+</head>
+<body>
+<form method="GET">
+	<LAbel>Buscar Articulo: </LAbel>
+	<input value="monitor" name="cadena"id="cadenaAbuscar" type="text">
+	<button id="buscaPorCadena" type="submit">BUSCAR </button>
+</form>
+			
+<table id="tablaArticulo" class="display dateTable" style="width:80%">
+<thead>
+	<tr>
+		<td>ID</td>
+		<td>Descripcion</td>
+		<td>Numero de ejemplares</td>
+		<td>Categoria</td>
+		<td>Borrar</td>
+		<td>Editar</td>
+	</tr>
+</thead>
+<tbody>
+</tbody>
+<tfoot>
+	<tr>
+		<td>ID</td>
+		<td>Descripcion</td>
+		<td>Numero de ejemplares</td>
+		<td>Categoria</td>
+		<td>Borrar</td>
+		<td>Editar</td>
+	</tr>
+</tfoot>
+</table>
+
+	<div id="insertar">
+		<form >
+			<label for="descripcion">Descripcion</label>
+			<input type="text" name="descripcion" id="descripcion">
+			<label for="categoria">Categoria</label>
+			<select id="categoria" name="idcategoria"></select>
+			<label for="numejemplares">Numero de Ejemplares</label>
+			<input id="numejemplares" name="numejemplar" type="text"/>
+			<BUTtoN id="guardar" type="submit" >GUARDAR</BUTton>
+		
+		</form>
+
+	</div>
+	
+	  <div id="id01" class="w3-modal">
+		<div class="w3-modal-content">
+		  <header class="w3-container w3-teal"> 
+			<span onclick="document.getElementById('id01').style.display='none'" 
+			class="w3-button w3-display-topright">&times;</span>
+			<h2 id="tituloEdit">Edicion del Articulo</h2>
+		  </header>
+		  <div class="w3-container">
+			<form >
+				<label for="descripcion">Descripcion</label>
+				<input type="text" name="descripcion" id="descripcionEdit">
+				<label for="categoria">Categoria</label>
+				<select id="categoriaEdit" name="idcategoria"></select><br/>
+				<label for="numejemplares">Numero de Ejemplares</label>
+				<input id="numejemplaresEdit" name="numejemplar" type="text"/>
+				<button id="guardarEdit" type="submit" >GUARDAR NUEVO</button>
+			</form>
+	
+		  </div>
+		  <footer class="w3-container w3-teal">
+			<p>Modal Footer</p>
+		  </footer>
+		</div>
+	  </div>
+
+
+</body>
+</html>
